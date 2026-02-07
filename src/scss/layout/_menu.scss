@@ -1,0 +1,82 @@
+/**
+ * Galería
+ *
+ * Estilos para la sección de menu 
+ *
+ */
+
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.nuestro-menu {
+    padding: 15rem 3rem 20rem 3rem;
+    background-image: url(../img/menu_arriba.png), linear-gradient(to top, v.$secundario, v.$secundario);
+    background-repeat: no-repeat;
+    background-position: center 3rem, 100%;
+    background-size: 200%;
+
+
+    @include m.tablet {
+        padding: 15rem 3rem 15rem 3rem; 
+        background-size: 100%
+    }
+
+    @include m.desktop {
+        background-size: 7%, 100%; 
+        
+    }
+
+}
+
+.grid-menu {
+    
+    @include m.tablet {
+        @include m.grid(2, 2rem) 
+    }
+}
+
+.menu {
+
+    // padding: 0 2rem;
+
+    h3 {
+        color: v.$blanco;
+        font-family: v.$fuentePrincipal;
+        font-size: 2.3rem;     
+        font-weight: 800;   
+    }
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;                    // espacio entre texto y precio/año
+        margin-bottom: 2.5rem;        // separación entre filas
+
+        .titulo {
+            flex: 1;
+            margin: 0;
+            color: v.$blanco;
+            font-size: 1.9rem;
+            line-height: 1.4;
+
+            span {
+                display: block;
+                color: v.$primario;
+                font-size: 1.8rem;
+                margin-top: 0.4rem;
+            }
+        }
+
+        .precio {
+            flex: 0 0 auto;           // no crece, tamaño fijo
+            margin: 0;
+            text-align: center;       // centra el texto dentro de su espacio
+            min-width: 100px;         // ancho mínimo para que "2026" tenga buen espacio
+            color: v.$blanco;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+/**
+ * Mixins
+ *
+ * Código de estilo reutilizable del proyecto
+ *
+ */
+
+@use "variables" as v;
+
+@mixin telefono {
+    @media (min-width: v.$telefono) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+
+@mixin grid($col: auto-fit, $gap: 5rem, $min-width: 140px) {
+    display: grid;
+    gap: $gap;
+    // justify-items: center;
+
+    @if $col == auto-fit {
+        grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+    } @else {
+        grid-template-columns: repeat($col, 1fr);
+    }
+}

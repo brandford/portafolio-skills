@@ -1,0 +1,104 @@
+/**
+ * Contacto
+ *
+ * Estilos de la sección del formulario de contacto 
+ *
+ */
+
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.contacto {
+    padding: 10rem 3rem 3rem 3rem;
+
+    @include m.tablet {
+        padding: 10rem 7rem 3rem 7rem;
+    }
+
+    .formulario {
+        box-shadow: 0px 0px 7px 1px rgb(0 0 0 / .15);
+        background-color: v.$blanco;
+        max-width: 80rem;
+        margin: 2rem auto 0 auto;
+        padding: 5rem 5rem 2rem 5rem;
+        // border: 1px solid #0b3d91;
+        border-radius: 8px;
+        margin-bottom: 5rem; /* Espacio extra para darle prolijidad respecto al footer */
+    }
+
+    .fila {
+        display: flex;
+        flex-direction: column; /* En móvil: etiqueta arriba, campo abajo */
+        margin-bottom: 2rem;
+    }
+
+    .label {
+        margin-bottom: 0.8rem;
+        font-weight: 600;
+        color: #333333;
+    }
+
+    .campo {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #e1e1e1;
+        border-radius: 6px;
+        font-size: 1.6rem;
+        transition: border-color 0.3s ease;
+    }
+
+    .campo:focus {
+        outline: none;
+        border-color: v.$secundario;
+        box-shadow: 0 0 0 3px rgba(13, 71, 161, 0.1);
+    }
+
+    .campo--area {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .boton {
+        display: block;
+        width: 100%;
+        background-color: v.$secundario;
+        color: v.$blanco;
+        font-weight: 600;
+        font-size: 1.5rem;
+        padding: 1.4rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 1rem;
+        
+    }
+
+    .boton:hover {
+        background-color: #0b3d91;
+    }    
+
+    .mensaje-resultado {
+        margin-top: 2rem;
+        padding: 1.5rem;
+        border-radius: 8px;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-align: center;
+        display: none;
+
+        &.exito {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        &.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    }	
+
+    
+}

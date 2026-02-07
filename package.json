@@ -1,0 +1,32 @@
+{
+  "name": "portafolio-skills",
+  "version": "1.0.0",
+  "description": "Documentación de habilidades TI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Víctor Morales",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "cssnano": "^7.1.2",
+    "gulp": "^5.0.1",
+    "gulp-avif": "^1.1.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "^4.0.0",
+    "imagemin-webp": "^8.0.0",
+    "sass": "^1.97.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.23",
+    "gulp-postcss": "^10.0.0"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1% in CL",
+    "not dead"
+  ]
+}

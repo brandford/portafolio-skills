@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Habilidades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header header-inicio">
+        <div class="contenido-header contenedor">
+            <div class="barra">
+                <div class="logo">
+                    <img src="build/img/logo.svg" alt="Logo Cafetería">
+                </div>
+                <nav class="nav-principal">
+                    <a href="#">Habilidades</a>
+                    <a href="#">Cursos</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+
+            <div class="texto-header">
+                <h1>Mi portafolio de habilidades</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenedor contenido-principal text-center">
+        
+        <div class="sobre-mi">
+            <h2><span>Conoce mis</span>habilidades</h2>
+        </div>
+
+        <div class="habilidades">
+            <div class="habilidad">
+                <h3>Diseño Web</h3>
+                <p>En Diseño Web desarrollo sitios modernos, accesibles y optimizados. Domino <span>HTML5 semántico</span> a nivel medio, aplicando correctamente las etiquetas de HTML para crear documentos bien estructurados, claros y optimizados para SEO.</p>
+                <p>Manejo CSS a nivel medio con enfoque en <span>Grid</span> y <span>Flexbox</span> para crear interfaces responsivas, flexibles y adaptables a cualquier dispositivo. Complemento con <span>Sass</span> a nivel básico con variables, mixins, anidamiento para mantener el código limpio, reutilizable y fácil de escalar.</p>
+                <p>Para automatizar el flujo de trabajo utilizo <span>Gulp.js</span> a nivel básico. Configuro tareas de compilación que transforman archivos Sass a CSS con watch en tiempo real, y ejecuto optimización automática de imágenes para mejorar significativamente el rendimiento del sitio.</p>
+                <p>Finalmente, utilizo <span>NPM</span> para la instalación, actualización y <span>gestión de dependencias</span> en proyectos web.</p>
+                <ul class="listado-iconos">
+                    <li>
+                        <span class="tooltip" data-tooltip="HTML semántico: nivel medio">
+                            <img class="tooltip" src="build/img/habilidades/diseño_web/html.svg" alt="HTML">
+                        </span>
+                    </li>
+                    <li>
+                        <span class="tooltip" data-tooltip="CSS Grid y Flexbox: nivel medio">
+                            <img class="tooltip" src="build/img/habilidades/diseño_web/css.svg" alt="CSS">
+                        </span>
+                    </li>
+                    <li>
+                        <span class="tooltip" data-tooltip="Sass selectores anidados, mixins, estrcutura modular: nivel básico">
+                            <img class="tooltip" src="build/img/habilidades/diseño_web/sass.svg" alt="Sass">
+                        </span>
+                    </li>   
+                    <li>
+                        <span class="tooltip" data-tooltip="Gulp.js ejecución de tareas compilación de Sass y optimización de imágenes: nivel básico">
+                            <img class="tooltip" src="build/img/habilidades/diseño_web/gulp.svg" alt="GulpJS">
+                        </span>     
+                    </li>    
+                    <li>
+                        <span class="tooltip" data-tooltip="NPM instalación de dependencias en proyectos Web: nivel básico">
+                            <img class="tooltip" src="build/img/habilidades/diseño_web/npm.svg" alt="NPM">
+                        </span>
+                    </li>                        
+                                
+                </ul>
+            </div>
+
+            <div class="habilidad">
+                <h3>Programación</h3>
+                <h4>JavaScript (ES6+)</h4>
+                <p>En Programación JavaScript, desarrollo aplicaciones web dinámicas y modernas utilizando las características más actuales del lenguaje. Aplico correctamente conceptos clave como arrow functions, template literals, iteradores, destructuring y el manejo de datos con LocalStorage para crear experiencias interactivas y persistentes en el navegador.</p>
+                <p>Tengo sólida experiencia en <span>programación asíncrona</span>, dominando callbacks, Promises y especialmente async/await para escribir código más legible y mantenible. Además, consumo <span>APIs REST</span> de manera eficiente mediante Fetch API, procesando respuestas JSON con async/await para obtener, enviar y manejar datos en tiempo real de forma limpia y confiable.</p>
+                <p>Estoy iniciándome en <span>TypeScript</span> para escribir código JavaScript más seguro y escalable.</p>
+                <ul class="listado-iconos">
+                    <li>
+                        <span class="tooltip" data-tooltip="JavaScript programación asíncrona, callbacks, promises y async/await: nivel medio">
+                            <img src="build/img/habilidades/programacion/javascript.svg" alt="JavaScript">
+                        </span>
+                    </li>     
+                    <li>
+                        <span class="tooltip" data-tooltip="TypeScript conozco los fundamentos del lenguaje: nivel básico">
+                            <img src="build/img/habilidades/programacion/typescript.svg" alt="TypeScript">
+                        </span>
+                    </li>                    
+                </ul>                   
+                <h4>Java Enterprise Edition (Java EE)</h4>
+                <p>En <span>Java EE</span> desarrollo aplicaciones empresariales robustas, escalables y mantenibles utilizando Java como lenguaje principal. Empleo <span>Maven</span> para la gestión eficiente de dependencias, construcción y estandarización de la estructura de proyectos. Integro <span>CDI</span> para una <span>inyección de dependencias</span> limpia y desacoplada, lo que facilita la modularidad.</p>
+                <p>Para la capa de presentación utilizo <span>JavaServer Faces</span> combinado con la librería de componentes <span>PrimeFaces</span>, permitiendo crear interfaces ricas, responsivas y con buena experiencia de usuario sin sacrificar productividad.</p>
+                <p>En la capa de persistencia aplico <span>Hibernate</span> como ORM para mapear objetos Java a bases de datos relacionales de forma eficiente y transparente. Implemento seguridad con <span>Apache Shiro</span>, gestionando autenticación, autorización, sesiones y protección contra ataques comunes de manera sencilla y configurable.</p>
+                <ul class="listado-iconos">
+                    <li>
+                        <span class="tooltip" data-tooltip="Java EE plataforma de desarrollo de aplicaciones Web: nivel alto">
+                            <img src="build/img/habilidades/programacion/java.svg" alt="Java">
+                        </span>
+                    </li>
+                    <!-- <li>
+                        <img src="build/img/habilidades/programacion/maven.svg" alt="Maven">
+                    </li> -->
+                    <li>
+                        <span class="tooltip" data-tooltip="JavaServer Faces framework basado en componentes para interfaz de usuario: nivel alto">
+                            <img src="build/img/habilidades/programacion/jsf.png" alt="JavaServer Faces">
+                        </span>
+                    </li>
+                    <li>
+                        <span class="tooltip" data-tooltip="PrimeFaces librería con más de 100 componentes avanzados para JavaServer Faces: nivel alto">
+                            <img src="build/img/habilidades/programacion/primefaces.png" alt="PrimeFaces">
+                        </span>
+                    </li>                     
+                    <li>
+                        <span class="tooltip" data-tooltip="Hibernate framework ORM para transacciones SQL: nivel medio">
+                            <img src="build/img/habilidades/programacion/hibernate.svg" alt="Hibernate">
+                        </span>
+                    </li>                    
+                </ul>
+                <h4>Spring Framework (Spring Boot)</h4>
+                <p>En Spring Framework con <span>Spring Boot</span> desarrollo aplicaciones backend modernas, escalables y listas para producción. Utilizo <span>Spring Web</span> para construir APIs RESTful y aplicaciones web, <span>Spring Data JPA</span> para simplificar el acceso a bases de datos mediante repositorios y entidades JPA/Hibernate, <span>Spring Security</span> para implementar autenticación, autorización, JWT y configuración de seguridad completa, y <span>Spring Test</span> junto con JUnit y Mockito para realizar pruebas unitarias de forma eficiente.</p>
+                <p>Estoy comenzando con <span>Angular</span>, framework frontend basado en <span>TypeScript</span>. Conozco los conceptos esenciales: componentes, módulos, servicios, data binding (interpolación y eventos), directivas como *ngIf y *ngFor, y routing básico.</p>
+                <ul class="listado-iconos">
+                    <li>
+                        <span class="tooltip" data-tooltip="Spring Framework (Spring Boot) Spring Web, Spring Data JPA, Spring Security, Spring Test: nivel básico">
+                            <img src="build/img/habilidades/programacion/spring.svg" alt="Spring">
+                        </span>
+                    </li>
+                    <li>
+                        <span class="tooltip" data-tooltip="Angular framework fronted: nivel básico">
+                            <img src="build/img/habilidades/programacion/angular.svg" alt="Angular">
+                        </span>
+                    </li>                    
+                    <!-- <li>
+                        <img src="build/img/habilidades/programacion/docker.svg" alt="Docker">
+                    </li>
+                    <li>
+                        <img src="build/img/habilidades/programacion/aws.svg" alt="AWS">
+                    </li>                     -->
+                </ul>      
+                <!-- <h4>Frameworks y libererías complementarias de Java</h4>   
+                <ul class="listado-iconos">
+                    <li>
+                        <img src="build/img/habilidades/programacion/shiro.png" alt="Apache Shiro">
+                    </li>         
+                    <li>
+                        <img src="build/img/habilidades/programacion/log4j.png" alt="Log4j">
+                    </li>                                                                 
+                    <li>
+                        <img src="build/img/habilidades/programacion/junit.png" alt="Junit">
+                    </li>                  
+                </ul> -->
+                <!-- <h4>Servidores aplicaciones de Java</h4>
+                <ul class="listado-iconos"> 
+                    <li>
+                        <img src="build/img/habilidades/programacion/payara.png" alt="Payara Server">
+                    </li> 
+                    <li>
+                        <img src="build/img/habilidades/programacion/apache.svg" alt="Apache">
+                    </li>                     
+                </ul> -->
+            </div>              
+            
+            <div class="habilidad">
+                <h3>Bases de Datos</h3>
+                <p>Tengo experiencia media en <span>MySQL</span> y <span>MariaDB</span>, gestores que utilizo en mis servidores y aplicaciones web. Domino el diseño de esquemas relacionales, consultas, índices, optimización de rendimiento y configuración típica para entornos de producción, lo que me permite implementar soluciones eficientes y escalables en proyectos.</p>
+                <p>En <span>Oracle</span> también cuento con nivel medio, habiendo trabajado en entornos operativos de alto rendimiento. Manejo funciones <span>PL/SQL</span>, procedimientos, vistas materializadas, secuencias y triggers, junto con consultas optimizadas y gestión de transacciones, asegurando integridad y rendimiento en aplicaciones.</p>
+                <ul class="listado-iconos">
+                    <li>
+                        <span class="tooltip" data-tooltip="MySQL en servidores de producción: nivel medio">
+                            <img src="build/img/habilidades/bases_datos/mysql.svg" alt="MySQL">
+                        </span>
+                    </li>
+                    <li>
+                        <span class="tooltip" data-tooltip="MariaDB en servidores de producción: nivel medio">
+                            <img src="build/img/habilidades/bases_datos/mariadb.svg" alt="MariaDB">
+                        </span>
+                    </li>
+                    <li>
+                        <span class="tooltip" data-tooltip="Oracle y PL/SQL: nivel medio">
+                            <img src="build/img/habilidades/bases_datos/oracle.svg" alt="Oracle">
+                        </span>
+                    </li>                
+                </ul>
+            </div>        
+
+            <div class="habilidad">
+                <h3>Business Intelligence</h3>
+                <p>Cuento con un nivel medio en <span>Power BI</span>, enfocado en la creación de dashboards interactivos y análisis de datos avanzado.</p>
+                <p>Manejo el modelado de datos dimensional estableciendo relaciones entre tablas, utilizo <span>medidas</span> y <span>cálculos</span> personalizados con <span>DAX</span> para obtener métricas dinámicas y análisis contextuales precisos.</p>
+                <p>Diseño <span>dashboards profesionales</span>: incorporo visualizaciones avanzadas (gráficos combinados, KPIs, mapas, tarjetas, slicers), formato condicional y temas personalizados, optimizando la usabilidad y el rendimiento.</p>
+                <ul class="listado-iconos">
+                    <li>
+                        <span class="tooltip" data-tooltip="Power BI dashboard, funciones y medidas: nivel medio">
+                            <img src="build/img/habilidades/business_intelligence/power-bi.png" alt="Grok">
+                        </span>
+                    </li>
+                </ul>
+            </div>               
+
+            <div class="habilidad">
+                <h3>Sistemas Operativos</h3>
+                <p>Cuento con una alta experiencia en administración de servidores <span>Debian GNU/Linux</span>, donde realizo configuraciones y mantenimiento operativo para entornos productivos. Domino la instalación y configuración de <span>Apache</span> (reverse proxy y certificados SSL), programación de tareas automáticas con <span>Cron</span>, gestión de zonas y resolución con <span>Bind9</span> como servidor DNS, administración de <span>MySQL/MariaDB</span>, configuración de servidores <span>FTP</span>, gestión segura de accesos mediante <span>SSH</span> y protección contra ataques de fuerza bruta y escaneos mediante <span>iptables</span> combinado con fail2ban.</p>
+                <p>En <span>Windows Server</span> cuento con un nivel básico, enfocado en tareas fundamentales de administración. Gestión con <span>Active Directory</span> (usuarios, grupos y unidades organizativas), aplicación de políticas de grupo, <span>carpetas compartidas</span> con permisos, establecimiento de directivas de seguridad básicas y respaldos con <span>Windows Server Backup</span>.</p>
+                <ul class="listado-iconos">
+                    <li>
+                        <span class="tooltip" data-tooltip="Debian GNU/Linux en ambientes de producción: nivel alto">
+                            <img src="build/img/habilidades/sistemas_operativos/debian.svg" alt="Debian">
+                        </span>
+                    </li>
+                    <!-- <li>
+                        <img src="build/img/habilidades/sistemas_operativos/linux_mint.svg" alt="Linux Mint">
+                    </li> -->
+                    <!-- <li>
+                        <img src="build/img/habilidades/sistemas_operativos/ubuntu.svg" alt="Ubuntu">
+                    </li>         -->
+                    <li>
+                        <span class="tooltip" data-tooltip="Windows Server en ambientes de producción: nivel básico">
+                            <img src="build/img/habilidades/sistemas_operativos/windows3.svg" alt="Windows">
+                        </span>
+                    </li>                         
+                </ul>
+            </div>    
+
+            <div class="habilidad">
+                <h3>Web Panels</h3>
+                <p>Tengo experiencia media con <span>VestaCP</span>, un panel de control open source ligero y minimalista para hosting web (actualmente desactualizado). Lo utilizo para gestionar dominios, cuentas de email, bases de datos, backups programados, tareas Cron, firewall integrado, file manager y monitoreo básico de recursos. Su interfaz limpia, bajo consumo de recursos y facilidad de instalación lo hacen ideal para servidores VPS o dedicados con múltiples sitios.</p>
+                <p>Cuento con experiencia media en <span>myVesta</span>, un fork actualizado de VestaCP (para Debian) enfocado en mayor seguridad y estabilidad. Lo empleo para las mismas tareas que VestaCP, pero aprovecho sus mejoras: soporte para versiones recientes de Debian, configuraciones simplificadas y actualizaciones frecuentes de seguridad.</p>
+                <ul class="listado-iconos">
+                    <li>
+                        <span class="tooltip" data-tooltip="VestaCP instalación, configuración y tuning: nivel medio">
+                            <img src="build/img/habilidades/web_panels/vestacp.png" alt="VestaCP">
+                        </span>
+                    </li>
+                    <li>
+                        <span class="tooltip" data-tooltip="myVesta instalación, configuración y tuning: nivel medio">
+                            <img src="build/img/habilidades/web_panels/myvesta.png" alt="myVesta">
+                        </span>
+                    </li>
+                </ul>
+            </div>               
+            
+            <div class="habilidad">
+                <h3>Control de Versiones</h3>
+                <p>Manejo los comandos fundamentales de <span>Git</span>: inicialización de repositorios (git init), seguimiento de cambios (add, commit), ramificación básica (branch, checkout, merge), resolución sencilla de conflictos y recuperación de versiones anteriores (log, reset, revert). Realizo la conexión entre mi máquina local y <span>GitHub</span> mediante <span>claves SSH</span> para autenticación segura, sin necesidad de contraseña en cada push/pull.</p>
+                <ul class="listado-iconos">
+                    <li>
+                        <span class="tooltip" data-tooltip="Git manejo de comandos básicos: nivel básico">
+                            <img src="build/img/habilidades/control_versiones/git.svg" alt="Git">
+                        </span>
+                    </li>
+                    <li>
+                        <span class="tooltip" data-tooltip="GitHub repositorio de código en la nube: nivel básico">
+                            <img src="build/img/habilidades/control_versiones/github.svg" alt="GitHub">
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="habilidad">
+                <h3>Inteligencia Artificial</h3>
+                <p>Domino a nivel alto el uso de <span>Grok</span> como IA de propósito general. Lo utilizo para resolver dudas y problemas de todo tipo: desde <span>cuestiones técnicas avanzadas</span> (código, arquitectura, bases de datos, seguridad, depuración de errores), hasta <span>consultas generales y cotidianas</span> de cualquier ámbito. Su capacidad para mantener contexto, razonar paso a paso y entregar respuestas precisas en cualquier tema lo convierte en mi compañero principal de aprendizaje, productividad y resolución de dudas diarias.</p>
+                <p>Estoy iniciándome en <span>Cursor</span>, el <span>editor de código potenciado por IA</span>. Lo utilizo principalmente para autocompletado inteligente y generación de código a partir de comentarios en lenguaje natural en chat. Aún estoy explorando sus funciones más avanzadas, pero ya noto mejoras en velocidad de codificación y resolución de problemas.</p>
+                <ul class="listado-iconos">
+                    <li>
+                        <span class="tooltip" data-tooltip="Grok IA de propósito general: nivel alto">
+                            <img src="build/img/habilidades/inteligencia_artificial/grok.png" alt="Grok">
+                        </span>
+                    </li>
+                    <li>
+                        <span class="tooltip" data-tooltip="Cursor editor de código con IA: nivel básico">
+                            <img src="build/img/habilidades/inteligencia_artificial/cursor.png" alt="Cursor">
+                        </span>
+                    </li>
+                </ul>
+            </div>               
+        </div>
+          
+    </main>
+
+    <section class="nuestro-menu">
+        <h2 class="heading-blanco"><span>Capacitaciones y</span> Cursos en línea</h2>
+
+        <div class="contenedor grid-menu">
+
+            <section class="menu">
+                <h3>Programación</h3>
+
+                <ul>
+                    <li>
+                        <p class="titulo">JavaScript Moderno ES6+ Guía Definitiva<span>Udemy</span></p>
+                        <p class="precio">2026</p>
+                    </li>      
+                    <li>
+                        <p class="titulo">Java Avanzado Aplicaciones Empresariales (JavaEE)<span>Udemy</span></p>
+                        <p class="precio">2024</p>
+                    </li>                                  
+                </ul>
+            </section>
+
+            <section class="menu">
+                <h3>Diseño Web</h3>
+
+                <ul>
+                    <li>
+                        <p class="titulo">CSS La Guía Completa Flexbox, CSS Grid, Sass<span>Udemy</span></p>
+                        <p class="precio">2025</p>
+                    </li>     
+                    <li>
+                        <p class="titulo">Desarrollo Web Completo con HTML, CSS y JavaScript<span>Udemy</span></p>
+                        <p class="precio">2024</p>
+                    </li>                                      
+                </ul>            
+            </section>
+
+            <section class="menu">
+                <h3>Sistemas Operativos</h3>
+
+                <ul>
+                    <li>
+                        <p class="titulo">NDG Linux Unhatched<span>Cisco Networking Academy</span></p>
+                        <p class="precio">2021</p>
+                    </li>     
+                    <li>
+                        <p class="titulo">NDG Linux Essentials<span>Cisco Networking Academy</span></p>
+                        <p class="precio">2021</p>
+                    </li>                                      
+                </ul>            
+
+            </section>      
+            
+            <section class="menu">
+                <h3>Seguridad Informática</h3>
+
+                <ul>
+                    <li>
+                        <p class="titulo">Introducción en Ciberseguridad<span>Cisco Networking Academy</span></p>
+                        <p class="precio">2021</p>
+                    </li>     
+                </ul>            
+
+            </section>              
+            
+        </div>
+
+    </section>
+
+    <section class="contacto contenedor margin-negativo-10 bg-blanco">
+        <h2><span>Formulario de</span>contacto</h2>
+
+
+        <form id="formulario" class="formulario">
+            <input type="hidden" name="access_key" value="aebfa7f1-76cc-4654-9732-8c312895756f">
+            <input type="hidden" name="subject" value="Nuevo mensaje desde Portafolio Skills">
+            
+            <div class="fila">
+                <label for="name" class="etiqueta">Nombre: </label>
+                <input type="text" name="name" class="campo" placeholder="Tu nombre" required >
+            </div>
+            <div class="fila">
+                <label for="email" class="etiqueta">Email: </label>
+                <input type="email" name="email" class="campo" placeholder="Tu correo electrónico" required >
+            </div>
+            <div class="fila">
+                <label for="message" class="etiqueta">Mensaje: </label>
+                <textarea name="message" class="campo campo--area" rows="6" placeholder="Tu Mensaje" required ></textarea>
+            </div> 
+            
+            <div class="fila">
+                <input type="submit" class="boton" value="Enviar Mensaje">
+            </div>
+        </form>
+
+        <!-- Aquí aparecerá el mensaje de éxito o error -->
+        <div id="resultado" class="mensaje-resultado"></div>   
+
+    </section>
+
+    <footer class="footer">
+        <p class="copyright">Portafolio de Habilidades. Víctor Hugo Morales Morales (2026)</p>
+    </footer>
+
+    <script src="build/js/app.js"></script>
+
+</body>
+</html>

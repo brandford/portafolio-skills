@@ -1,0 +1,99 @@
+/**
+ * Contenido
+ *
+ * Estilos del contenido principal de la página 
+ *
+ */
+
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+ .contenido-principal {
+    background-color: v.$blanco;
+    padding: 5rem 2rem; // Relleno entre la imagen del heading y la sección sobre nosotros
+
+    @include m.tablet { 
+        padding: 10rem;
+        margin-top: -10rem;
+        position: relative; // Necesario para encimar el elemento sobre la imagen del header
+
+
+    }
+
+    // Sobre Mi
+    .sobre-mi {
+        p {
+            text-align: justify;
+        }
+    }
+
+    // Habilidades
+    .habilidades {
+        margin-top: 5rem;
+
+        .habilidad {
+
+            margin-top: 1rem;
+            padding-bottom: 5rem;
+
+            
+
+            &:last-of-type {
+                padding-bottom: 0;
+            }
+            
+            h3 {
+                margin: 0;
+                text-align: left;
+                color: v.$primario;
+
+                &::after { // Línea del título
+                    content: '';
+                    display: block; // Para que se visualice
+                    width: 20%;
+                    height: 2.1px;
+                    background-color: v.$secundario;
+                }
+            }
+
+            h4 {
+                margin: 3rem 0 0 0;
+                text-align: center;
+                color: v.$terciario;
+                font-family: v.$fuentePrincipal;
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .listado-iconos {
+
+            // padding-bottom: 5rem; // Espacio cuando hay más de un set de logos 
+
+            @include m.tablet {
+                @include m.grid(auto-fit, 1rem, 140px);
+            }
+
+            li {
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 184px;
+
+                img {
+                    max-width: 10rem;     // limita el ancho máximo
+                    max-height: 10rem;    // limita la altura máxima (clave para uniformidad)
+                    width: auto;          // mantiene proporción
+                    height: auto;
+                    object-fit: contain;  // evita distorsión, mantiene el contenido dentro del área
+                }
+            }
+        }
+        
+        
+    }
+
+ }

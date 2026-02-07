@@ -1,0 +1,52 @@
+/**
+ * Tooltip
+ * Versión sin transiciones ni animaciones (aparece/desaparece inmediato)
+ */
+
+@use "base/variables" as v;
+
+.listado-iconos {
+
+    .tooltip {
+        position: relative;
+
+        // Estado base del tooltip (siempre oculto)
+        &::before,
+        &::after {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);  // solo centrado horizontal, sin translateY
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        // Tooltip (cuadro)
+        &::after {
+            content: attr(data-tooltip);
+            top: 116%;                         // debajo de la imagen
+            background-color: v.$negro;
+            color: v.$blanco;
+            padding: 0.6rem 1rem;
+            border-radius: 6px;
+            font-size: 1.3rem;
+            white-space: nowrap;
+        }
+
+        // Flecha
+        &::before {
+            content: "";
+            top: 100%;
+            border: 8px solid transparent;
+            border-bottom-color: v.$negro;
+        }
+
+        // Al hover: mostrar inmediatamente (sin transición)
+        &:hover::before,
+        &:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
