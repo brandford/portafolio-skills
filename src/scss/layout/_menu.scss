@@ -13,16 +13,16 @@
     background-image: url(../img/menu_arriba.png), linear-gradient(to top, v.$secundario, v.$secundario);
     background-repeat: no-repeat;
     background-position: center 3rem, 100%;
-    background-size: 200%;
+    background-size: 20%, 100%; 
 
 
     @include m.tablet {
         padding: 15rem 3rem 15rem 3rem; 
-        background-size: 100%
+        background-size: 15%, 100%; 
     }
 
     @include m.desktop {
-        background-size: 7%, 100%; 
+        background-size: 5%, 100%; 
         
     }
 
