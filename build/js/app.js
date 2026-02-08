@@ -1,3 +1,25 @@
+/*
+
+	app.js / Portafolio Skills
+
+*/
+
+// Efecto de desplazamiento desde navegación
+document.addEventListener("DOMContentLoaded", function() {
+	const enlaces = document.querySelectorAll(".nav-principal a");
+
+	enlaces.forEach(link => {
+		link.addEventListener("click", function(e) {
+			e.preventDefault();
+			console.log(e.target.getAttribute("href"));
+			const seccionEnlace = e.target.getAttribute("href");
+			const seccion = document.querySelector(seccionEnlace);
+
+			seccion.scrollIntoView({behavior: "smooth"});
+		});
+	});
+});
+
 // Manejo del formulario de contacto con Web3Forms
 document.addEventListener("DOMContentLoaded", function () {
     const formulario = document.getElementById("formulario");
